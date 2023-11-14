@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_form3</title>
+</head>
+<body>
+    <h6>여러가지 form 요소들</h6>
+    <form action="">
+        <!--
+            input type="radio"의 name 속성의 값이 같으면
+            같은 그룹으로 묶어서 하나씩만 선택하게 할 수 있다.
+         -->
+        <fieldset>
+            <legend>성별정보 선택</legend>
+            <label>
+                <input type="radio" name="gender" value="woman" checked="checked">여자
+            </label>
+            <label>
+                <input type="radio" name="gender" value="men">남자
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>취미정보 선택</legend>
+            <label>
+                <input type="checkbox" name="hobby" value="tennis">테니스
+                <input type="checkbox" name="hobby" value="piano">피아노
+                <input type="checkbox" name="hobby" value="reading">독서
+                <input type="checkbox" name="hobby" value="etc">기타
+            </label>
+        </fieldset>
+        <br/>
+        <label for="job">직업 선택</label>
+        <select name="job" id="job">
+            <option value="">선택</option>
+            <option value="teacher">선생님</option>
+            <option value="doctor">의사</option>
+            <option value="programmer">프로그래머</option>
+            <option value="etc">기타</option>
+        </select>
+        <br/>
+        <label for="myFile">첨부파일</label>
+        <input type="file" id="myFile" name="myFile"/>
+        <br/>
+        <label for="comment">하고 싶은 말</label>
+        <textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+        <br/>
+        <button type="submit">가입</button>
+    </form>
+</body>
+</html>

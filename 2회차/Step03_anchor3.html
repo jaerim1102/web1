@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_anchor3</title>
+</head>
+<body>
+    <h6>a태그를 클릭하였을 때 javascript 실행</h6>
+    <a href="javascript:alert('hello')">CLICK1</a>
+    <a href="javascript:sayHello('')">CLICK2</a>
+
+    <a href="#">CLICK3</a>
+
+    <a href="javascript:void(0)">동작하지 않는 링크</a>
+    <script>
+        var sayHello=function(){
+            document.querySelector('h6').innerText='안녕'
+        };
+    </script>
+</body>
+</html>

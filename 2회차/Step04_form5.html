@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_form5</title>
+</head>
+<body>
+    <form action="">
+        <label for="nick">별명</label>
+        <input type="text" id="nick" name="nick" placeholder="별명을 입력하세요.">
+        <br/>
+        <label for="lunch">점심메뉴</label>
+        <select name="lunch" id="lunch" multiple="multiple">
+            <option value="">선택</option>
+            <option value="">삼각김밥</option>
+            <option value="">사발면</option>
+            <option value="">샌드위치</option>
+            <option value="">샌드위치</option>
+            <option value="">샌드위치</option>
+        </select>
+        <br/>
+        <label for="coffee">커피메뉴</label>
+        <select name="coffee" id="coffee">
+            <optgroup label="에스프레소">
+                <option value="">아메리카노</option>
+                <option value="">라떼</option>
+                <option value="">커피모카</option>
+            </optgroup>
+            <optgroup label="스무디">
+                <option value="">딸기 요거트 스무디</option>
+                <option value="">플레인 요거트 스무디</option>
+                <option value="">망고 요거트 스무디</option>
+            </optgroup>
+        </select>
+        <br/>
+        <!-- 
+            button type='submit'과
+            input type='submit'은 동일하게 작동됨.
+         -->
+        <button type="submit">주문</button>
+        <input type="submit" value="주문"/>
+
+        <button type="reset">취소</button>
+        <input type="reset" value="취소"/>
+
+    </form>
+</body>
+</html>
