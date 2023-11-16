@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Border</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box{
+            /* 외곽선의 폭 */
+            border-width: 10px;
+            /* 외곽선의 스타일
+                none/solid/dotted/dashed/double/inset/outset
+            */
+            border-style: solid;
+            /* 외곽선의 색상 */
+            border-color: blue;
+        }
+        .box1{
+            /* .box안의 css 함축 */
+            border: 10px solid blue;
+        }
+        .box2{
+            /* border-width:10px을 풀어서 쓰면 */
+            border-top-width: 10px;
+            border-right-width: 10px;
+            border-bottom-width: 10px;
+            border-left-width: 10px;
+
+            /* border-style:solid 풀어서 쓰면 */
+            border-top-style: dotted;
+            border-right-style: dashed;
+            border-bottom-style: inset;
+            border-left-style: outset;
+
+            /* border-color:blue 풀어서 쓰면 */
+            border-top-color: blue;
+            border-right-color: red;
+            border-bottom-color: yellowgreen;
+            border-left-color: gold;
+            
+        }
+        .box3{
+            border-width: 30px 20px 10px 40px;
+            border-style: dashed double dashed solid;
+            border-color: red gold yellowgreen blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="box">box</div>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>

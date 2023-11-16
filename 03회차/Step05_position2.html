@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_position2</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rebeccapurple;
+        }
+
+        .spacer {
+            height: 500px;
+            background-color: #999;
+        }
+
+        #one {
+            /* div는 static 디폴트라 위치값 안먹여짐 relative 먹어야함 */
+            position: relative; 
+            /* 위에서 떨어진 거리 (y좌표) */
+            top: 150px;
+            /* 왼쪽에서 떨어진 거리 (X좌표) */
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">static</div>
+    <div class="box" id="one">relative</div>
+    <div class="spacer"></div>
+    <div class="box" id="two">absolute</div>
+    <div class="box">비교box</div>
+    <div class="box" id="three">fixed</div>
+</body>
+
+</html>

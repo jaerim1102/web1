@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Selector2</title>
+    <style>
+        /* div {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        } */
+        /* .animals{
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        } */
+
+        /* div이면서 class이름이 animals인 요소 선택 */
+        div.animals {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /*
+        선택자를 붙여쓰면 and 조건으로 태그를 선택
+        div.animals-> div태그이면서 클래스명 animals
+        p.animalss-> p태그이면서 클래스명 animlas
+        div.a.b-> div태그이면서 클래스명이 a와 b
+        .a.b-> 클래스명만 a와 b
+        */
+        div.animals.friends{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animals friends">
+        <h2>Dog</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum cum accusantium nesciunt nobis expedita
+            doloribus facere deleniti maxime! Aperiam, molestiae. Vitae enim autem, adipisci ratione qui incidunt eaque
+            fugit?
+        </p>
+    </div>
+    <div class="animals">
+        <h2>Cat</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum cum accusantium nesciunt nobis expedita
+            doloribus facere deleniti maxime! Aperiam, molestiae. Vitae enim autem, adipisci ratione qui incidunt eaque
+            fugit?
+        </p>
+    </div>
+    <div class="friends">
+        <h2>준규</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum cum accusantium nesciunt nobis expedita
+            doloribus facere deleniti maxime! Aperiam, molestiae. Vitae enim autem, adipisci ratione qui incidunt eaque
+            fugit?
+        </p>
+    </div>
+    <p class="animals">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, sunt debitis. Distinctio, nesciunt consequuntur
+        ipsa assumenda tempore, ipsam officiis numquam soluta consectetur cupiditate earum cumque totam, voluptatibus
+        nulla quia. Nihil!
+    </p>
+</body>
+
+</html>

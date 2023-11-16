@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_PseudoClass2</title>
+    <style>
+        a{
+            text-decoration: none; /* 밑줄 제거 */
+        }
+        a:hover{
+            text-decoration: underline; /* 밑줄 추가 */
+        }
+        /* 한번도 방문하지 않은 링크 가상 클래스 선택자 */
+        a:link{
+            color: pink;
+        }
+        /* 이미 방문했던 링크 가상 클래스 선택자 */
+        a:visited{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/Step04_PseudoClass2.html">Study</a>
+    <a href="https://www.ygfamily.com/artist/Main.asp?LANGDIV=K&ATYPE=2&ARTIDX=83">Artist</a>
+    <a href="https://www.youtube.com/OfficialTreasure">OfficialTreasure</a>
+</body>
+</html>

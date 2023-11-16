@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_PseudoClass</title>
+    <style>
+        /* [pseudo class] 가상클래스
+        시각적으로 확인할 수 없지만
+        특정 상황에서 있다고 간주되는 클래스 */
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+        /* hover 가상 클래스 선택자 */
+        .box:hover{
+            background-color: skyblue;
+        }
+        /* focus 가상 클래스 선택자 */
+        input:focus{
+            background-color: skyblue;
+        }
+        button:focus{
+            color: rebeccapurple;
+        }
+        /* active 가상 클래스 선택자 */
+        button:active{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <input type="text">
+    <input type="text">
+    <button>버튼</button>
+    <button>버튼</button>
+</body>
+</html>

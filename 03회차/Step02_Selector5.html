@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Selector5</title>
+    <style>
+        /* .container의 자손 중에 p 선택 */
+        .container p{
+            background-color: yellow;
+        }
+        /* .container의 자식 중에 p 선택 */
+        .container > p{
+            color: blue;
+        }
+
+        .container > .sub > p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla consequuntur ipsum quia expedita, eligendi
+            provident saepe in voluptate accusamus adipisci modi, laborum consectetur debitis, id error molestiae
+            voluptatem eius a.</p>
+        <div class="sub">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio magnam, et nesciunt sed dolorem corrupti
+                harum explicabo eos deserunt temporibus! Culpa tempore autem cumque laborum architecto perferendis
+                aliquam excepturi similique?</p>
+        </div>
+    </div>
+</body>
+
+</html>
